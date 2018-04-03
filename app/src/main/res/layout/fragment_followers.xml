@@ -1,0 +1,207 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.justgraduationproject.android.recommendations.FollowersFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_default_pixel"
+        android:paddingBottom="@dimen/activity_default_pixel"
+        android:layout_marginBottom="@dimen/activity_default_pixel"
+        android:background="@android:color/white"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Profile_followers"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/font_default"
+            android:padding="@dimen/activity_default_pixel"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_default_pixel"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/team4"
+                        android:contentDescription="@string/Description" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Follower"                        android:textAlignment="center"
+                        android:textSize="@dimen/font_default"
+                        android:textColor="@color/textPrimaryDark"
+                        android:padding="@dimen/activity_small_pixel"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_default_pixel"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/team4"
+                        android:contentDescription="@string/Description" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Follower"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/font_default"
+                        android:textColor="@color/textPrimaryDark"
+                        android:padding="@dimen/activity_small_pixel"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_default_pixel"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/team4"
+                        android:contentDescription="@string/Description" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Follower"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/font_default"
+                        android:textColor="@color/textPrimaryDark"
+                        android:padding="@dimen/activity_small_pixel"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_default_pixel"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/team4"
+                        android:contentDescription="@string/Description" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Follower"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/font_default"
+                        android:textColor="@color/textPrimaryDark"
+                        android:padding="@dimen/activity_small_pixel"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_default_pixel"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/team4"
+                        android:contentDescription="@string/Description" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Follower"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/font_default"
+                        android:textColor="@color/textPrimaryDark"
+                        android:padding="@dimen/activity_small_pixel"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_default_pixel"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/mrmercedes"
+                        android:contentDescription="@string/Description" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Follower"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/font_default"
+                        android:textColor="@color/textPrimaryDark"
+                        android:padding="@dimen/activity_small_pixel"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_default_pixel"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/mrmercedes"
+                        android:contentDescription="@string/Description" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Follower"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/font_default"
+                        android:textColor="@color/textPrimaryDark"
+                        android:padding="@dimen/activity_small_pixel"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

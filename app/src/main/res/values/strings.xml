@@ -1,0 +1,126 @@
+<resources>
+    <!--Application Title-->
+
+    <string name="app_name">Booky</string>
+
+    <!--Menu-->
+
+    <string name="title_home">Home</string>
+
+    <string name="title_community">Community</string>
+
+    <string name="title_messaging">Messaging</string>
+
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_profile">Profile</string>
+
+    <!--TextViews-->
+
+    <string name="Recommendation_string">Recommended for You</string>
+
+    <string name="Latest_string">Latest Books</string>
+
+    <string name="Rated_string">Most Rated</string>
+
+    <!--Profile-->
+
+    <string name="Profile_name">John Doe</string>
+
+    <string name="Profile_btn0">Edit Profile</string>
+
+    <string name="Profile_btn1">Recommendations</string>
+
+    <string name="Profile_btn2">Follow</string>
+
+    <string name="Profile_btn3">Message</string>
+
+    <string name="Profile_about">About</string>
+
+    <string name="Profile_link0">http://www.website.com</string>
+
+    <string name="Profile_link1">http://www.facebook.com/username</string>
+
+    <string name="Profile_link2">http://www.twitter.com/username</string>
+
+    <string name="Profile_date">DD/MM/YYYY</string>
+
+    <string name="Profile_interest">Interested</string>
+
+    <string name="Profile_navBtn0">Books</string>
+
+    <string name="Profile_navBtn1">Followers</string>
+
+    <string name="Profile_navBtn2">Activities</string>
+
+    <string name="Profile_books">Books</string>
+
+    <string name="Profile_followers">Followers</string>
+
+    <string name="Profile_activities">Activities</string>
+
+    <!--Author Profile-->
+
+    <string name="Author_name">Stephan King</string>
+
+    <string name="Author_message">Message</string>
+
+    <string name="Author_follow">Follow</string>
+
+    <!--Book Page-->
+
+    <string name="Book_title">Book Title :</string>
+
+    <string name="Book_author">Author :</string>
+
+    <string name="Book_genre">Genre :</string>
+
+    <string name="Book_genreName">Crime</string>
+
+    <string name="Book_averageRating">Average Rating :</string>
+
+    <string name="Book_userRating">Rate This Book</string>
+
+    <string name="Book_summarySF">Overview</string>
+
+    <string name="Book_reviews">Reviews</string>
+
+    <string name="Book_reviewsHintMsG">Write your Opinion....</string>
+
+    <string name="Book_revealReviews">More Reviews.....</string>
+
+    <!--Others-->
+
+    <string name="Description">Some Description</string>
+
+    <string name="Paragraph">Lorem ipsum dolor sit amet diam nonummy nibh dolore. Lorem ipsum dolor sit amet diam nonummy nibh dolore.Lorem ipsum dolor sit amet diam nonummy nibh dolore</string>
+
+    <string name="Book">Book Title</string>
+
+    <string name="Follower">Follower Name</string>
+
+    <string name="AVG">50 Ratings (Avg = 4.2)</string>
+
+    <string name="Socialization">Share :</string>
+
+    <string name="Recommendation0">Books From The Same Genre</string>
+
+    <string name="Recommendation1">Books By The Same Author</string>
+
+    <string name="ExampleTextView">Hello There</string>
+
+    <string name="TimeView">TimeView</string>
+
+    <string name="Male_name">Richard Roe</string>
+
+    <string name="Female_name">Jane Roe</string>
+
+    <string name="Social_btn0">Support</string>
+
+    <string name="Social_btn1">Comment</string>
+
+    <string name="Social_btn2">Share</string>
+
+    <string name="Social_Notifications">an Action happened recently</string>
+
+</resources>

@@ -1,0 +1,302 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.justgraduationproject.android.recommendations.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/Pennywise"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_alignEnd="@+id/Buttons"
+                    android:layout_alignParentTop="true"
+                    android:alpha="0.8"
+                    android:background="@drawable/background"
+                    android:contentDescription="@string/Description" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ProPicAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="115dp"
+                    android:src="@drawable/team1"
+                    android:layout_marginTop="170dp"
+                    app:civ_border_width="2dp"/>
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/Profile_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_below="@id/ProPicAuthor"/>
+
+                <LinearLayout
+                    android:id="@+id/Buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Name"
+                    android:layout_margin="8dp"
+                    android:paddingBottom="8dp">
+
+                    <!--<Button-->
+                        <!--android:id="@+id/Follow"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="@dimen/activity_small_pixel"-->
+                        <!--android:padding="@dimen/activity_small_pixel"-->
+                        <!--android:paddingStart="@dimen/activity_small_pixel"-->
+                        <!--android:drawableStart="@drawable/ic_settings_black_24dp"-->
+                        <!--android:text="@string/Profile_btn0"-->
+                        <!--android:textColor="#FFFFFF"-->
+                        <!--android:background="@drawable/roundedet"-->
+                        <!--tools:ignore="ButtonStyle,RtlSymmetry" />-->
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_small_pixel"
+                        android:padding="@dimen/activity_small_pixel"
+                        android:drawableStart="@drawable/ic_poll_black_24dp"
+                        android:paddingStart="@dimen/activity_small_pixel"
+                        android:text="@string/Profile_btn1"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/roundedbutton"
+                        tools:ignore="ButtonStyle,RtlSymmetry" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/aboutme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingTop="@dimen/activity_default_pixel"
+                android:paddingBottom="@dimen/activity_default_pixel"
+                android:layout_below="@id/info"
+                android:layout_marginTop="@dimen/activity_default_pixel">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Profile_about"
+                        android:textSize="@dimen/font_default"
+                        android:textColor="#000000"
+                        android:paddingStart="@dimen/activity_small_pixel"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Paragraph"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/font_medium"
+                        android:layout_marginStart="16dp"
+                        android:paddingBottom="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/activity_small_pixel"
+                            android:src="@drawable/ic_cake_black_24dp"
+                            android:contentDescription="@string/Description"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:text="@string/Profile_date"
+                            android:textSize="@dimen/font_default"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/activity_small_pixel"
+                            app:srcCompat="@drawable/ic_public_black_24dp"
+                            android:contentDescription="@string/Description"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:text="@string/Profile_link0"
+                            android:textSize="@dimen/font_default"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/activity_small_pixel"
+                            android:src="@drawable/download"
+                            android:contentDescription="@string/Description"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:text="@string/Profile_interest"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/font_default" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:paddingTop="@dimen/activity_small_pixel"
+                            android:layout_margin="@dimen/activity_small_pixel"
+                            android:src="@drawable/facebook"
+                            android:contentDescription="@string/Description" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:text="@string/Profile_link1"
+                            android:textSize="@dimen/font_default"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/activity_small_pixel"
+                            android:src="@drawable/twittericon"
+                            android:contentDescription="@string/Description" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:text="@string/Profile_link2"
+                            android:textSize="@dimen/font_default"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ProfileButtonss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
+                android:layout_below="@id/aboutme">
+
+                <Button
+                    android:id="@+id/Btn0"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/Profile_navBtn0"
+                    android:textSize="19sp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="ButtonStyle"
+                    android:onClick="fetchProfile"/>
+
+                <Button
+                    android:id="@+id/Btn1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/Profile_navBtn1"
+                    android:textSize="19sp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="ButtonStyle"
+                    android:onClick="fetchProfile"/>
+
+                <Button
+                    android:id="@+id/Btn2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/Profile_navBtn2"
+                    android:textSize="19sp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="ButtonStyle"
+                    android:onClick="fetchProfile"/>
+
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/fragment"
+                android:name="com.justgraduationproject.android.recommendations.ProfileBooksFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ProfileButtonss"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="65dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

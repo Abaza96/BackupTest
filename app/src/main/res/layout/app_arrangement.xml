@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="@dimen/activity_default_pixel"
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfilePic"
+            android:layout_width="88dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/Description"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/activity_default_pixel"
+            android:layout_marginBottom="@dimen/activity_default_pixel"/>
+
+        <RelativeLayout
+            android:id="@+id/TextViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@id/ProfilePic"
+            android:layout_marginStart="@dimen/activity_default_pixel">
+
+            <TextView
+                android:id="@+id/Identity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_small_pixel"
+                android:text="@string/ExampleTextView"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/font_medium"/>
+
+            <TextView
+                android:id="@+id/DatenTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_small_pixel"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/activity_small_pixel"
+                android:text="@string/TimeView"
+                android:textColor="@color/textPrimaryDark"
+                android:textSize="@dimen/font_medium"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViews"
+            android:text="@string/Paragraph"
+            android:padding="@dimen/activity_small_pixel"
+            android:layout_marginTop="@dimen/activity_small_pixel"
+            android:layout_marginStart="98dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

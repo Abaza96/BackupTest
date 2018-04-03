@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="@dimen/activity_default_pixel"
+    android:paddingStart="@dimen/activity_small_pixel"
+    android:layout_marginBottom="@dimen/activity_default_pixel"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables"
+        android:layout_marginStart="@dimen/activity_default_pixel">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/SocialProfilePic"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/Description"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/activity_small_pixel"
+            android:layout_marginBottom="@dimen/activity_small_pixel"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_small_pixel">
+
+            <TextView
+                android:id="@+id/SocialIdentity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_small_pixel"
+                android:text="@string/ExampleTextView"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/font_medium"/>
+
+            <TextView
+                android:id="@+id/SocialDatenTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="@dimen/activity_default_pixel"
+                android:text="@string/TimeView"
+                android:textColor="@color/textPrimaryDark"
+                android:textSize="@dimen/font_medium"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/SocialContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Paragraph"
+        android:padding="@dimen/activity_small_pixel"
+        android:layout_marginStart="@dimen/activity_default_pixel"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_default_pixel">
+
+        <CheckBox
+            android:id="@+id/Socialbtn0"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@drawable/buttons"
+            android:textSize="@dimen/font_medium"
+            android:background="@android:color/transparent"
+            android:text="@string/Social_btn0"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle"/>
+
+        <Button
+            android:id="@+id/Socialbtn1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_forum_black_24dp"
+            android:text="@string/Social_btn1"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/Socialbtn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_share_black_24dp"
+            android:text="@string/Social_btn2"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,320 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.justgraduationproject.android.recommendations.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <!--Start : ScrollView Derivative-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Start : Recommendations-->
+
+            <RelativeLayout
+                android:id="@+id/Recomms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:layout_marginTop="@dimen/activity_default_pixel"
+                android:layout_marginBottom="@dimen/activity_default_pixel"
+                android:paddingTop="@dimen/activity_small_pixel"
+                android:paddingBottom="@dimen/activity_default_pixel">
+
+                <TextView
+                    android:id="@+id/RecommTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Recommendation_string"
+                    android:textSize="@dimen/font_default"
+                    android:textColor="@color/textPrimaryDark"
+                    android:padding="@dimen/activity_small_pixel"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+                
+                <HorizontalScrollView
+                    android:id="@+id/RecommHSV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/RecommTextView">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <!--End : Recommendations-->
+
+            <!--Start : Latests-->
+
+            <RelativeLayout
+                android:id="@+id/Lats"
+                android:layout_below="@id/Recomms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:layout_marginTop="@dimen/activity_default_pixel"
+                android:layout_marginBottom="@dimen/activity_default_pixel"
+                android:paddingTop="@dimen/activity_small_pixel"
+                android:paddingBottom="@dimen/activity_default_pixel">
+
+                <TextView
+                    android:id="@+id/LatsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Latest_string"
+                    android:textSize="@dimen/font_default"
+                    android:textColor="@color/textPrimaryDark"
+                    android:padding="@dimen/activity_small_pixel"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/LatsHSV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LatsTextView">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_above="@+id/MRs"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/Description"
+                            android:src="@drawable/mrmercedes"
+                            tools:ignore="ObsoleteLayoutParam"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <!--End : Latests-->
+
+            <!--Start : Most Rated-->
+
+            <RelativeLayout
+                android:id="@+id/MRs"
+                android:layout_below="@id/Lats"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:layout_marginTop="@dimen/activity_default_pixel"
+                android:layout_marginBottom="@dimen/activity_default_pixel"
+                android:paddingTop="@dimen/activity_small_pixel"
+                android:paddingBottom="@dimen/activity_default_pixel">
+
+                <TextView
+                    android:id="@+id/MRsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rated_string"
+                    android:textSize="@dimen/font_default"
+                    android:textColor="@color/textPrimaryDark"
+                    android:padding="@dimen/activity_small_pixel"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/MRsHSV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MRsTextView">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:contentDescription="@string/Description"
+                            android:src="@drawable/mrmercedes"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/mrmercedes"
+                            android:contentDescription="@string/Description"
+                            android:onClick="Navigate"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <!--End : Most Rated-->
+
+        </RelativeLayout>
+
+        <!--End : ScrollView Derivative-->
+
+    </ScrollView>
+
+</LinearLayout>

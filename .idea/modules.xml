@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dummy-master.iml" filepath="$PROJECT_DIR$/Dummy-master.iml" />
+      <module fileurl="file://G:\Projects\Mobile Apps\Android\Dummy-master\Recommendations.iml" filepath="G:\Projects\Mobile Apps\Android\Dummy-master\Recommendations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
