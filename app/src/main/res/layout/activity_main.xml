@@ -9,10 +9,57 @@
     android:background="@color/colorPrimaryDark"
     tools:context="com.justgraduationproject.android.recommendations.MainActivity">
 
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_small_pixel"
+                    android:src="@drawable/logoredintense"
+                    android:contentDescription="@string/Description"/>
+
+                <ImageButton
+                    android:id="@+id/setts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_settings_black_24dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/Description"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="@dimen/activity_default_pixel"
+                    android:layout_marginEnd="@dimen/activity_default_pixel"
+                    android:layout_alignParentEnd="true"/>
+
+                <SearchView
+                    android:id="@+id/profile"
+                    android:layout_width="@dimen/activity_large_pixel"
+                    android:layout_height="@dimen/activity_large_pixel"
+                    android:layout_marginStart="@dimen/activity_default_pixel"
+                    android:layout_marginEnd="@dimen/activity_default_pixel"
+                    android:layout_toStartOf="@+id/setts"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.CoordinatorLayout>
+
     <fragment
         android:id="@+id/frag"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
         android:layout_marginBottom="56dp"
         android:name="com.justgraduationproject.android.recommendations.ProfileFragment"/>
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.justgraduationproject.android.recommendations.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_small_pixel"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/activity_default_pixel"
+            android:src="@drawable/logoredintense"
+            android:contentDescription="@string/Description" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Logo"
+            android:padding="@dimen/activity_small_pixel"
+            android:textColor="@color/textPrimary"
+            android:text="@string/Register_title"
+            android:textAllCaps="true"
+            android:textStyle="italic"
+            android:textSize="15sp"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title">
+
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:id="@+id/tab0"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/Register_tab0"/>-->
+
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:id="@+id/tab1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/Register_tab1"/>-->
+
+        </android.support.design.widget.TabLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<fragment-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:name="com.justgraduationproject.android.recommendations.EnteringFragment"/>-->
+
+</LinearLayout>

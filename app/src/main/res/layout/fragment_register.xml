@@ -1,0 +1,300 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.justgraduationproject.android.recommendations.RegisterFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/activity_default_pixel">
+
+            <TextView
+                android:id="@+id/titleInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Settings_account"
+                android:textSize="@dimen/font_default"
+                android:textColor="@color/textPrimary"/>
+
+            <LinearLayout
+                android:id="@+id/Namefirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/titleInfo"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Settings_firstName"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/textPrimaryDark"
+                    android:padding="@dimen/activity_small_pixel"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedet"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:hint="@string/Settings_hint0"
+                    android:textColorHint="#000000"
+                    android:inputType="textPersonName"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nameSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/Namefirst"
+                android:layout_marginTop="@dimen/activity_small_pixel">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Settings_lastName"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/textPrimaryDark"
+                    android:padding="@dimen/activity_small_pixel"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedet"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:hint="@string/Settings_hint1"
+                    android:textColorHint="#000000"
+                    android:inputType="textPersonName"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/nameSecond"
+                android:layout_marginTop="@dimen/activity_small_pixel">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Settings_info0"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/textPrimaryDark"
+                    android:padding="@dimen/activity_small_pixel"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedet"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:textColorHint="#000000"
+                    android:inputType="phone"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/info0"
+                android:layout_marginTop="@dimen/activity_small_pixel">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Settings_info1"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/textPrimaryDark"
+                    android:padding="@dimen/activity_small_pixel"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedet"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:textColorHint="#000000"
+                    android:inputType="text"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/info1"
+                android:layout_marginTop="@dimen/activity_small_pixel">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Settings_info2"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/textPrimaryDark"
+                    android:padding="@dimen/activity_small_pixel"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedet"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:textColorHint="#000000"
+                    android:inputType="text"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/info2"
+                android:layout_marginTop="@dimen/activity_small_pixel">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Settings_info3"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/textPrimaryDark"
+                    android:padding="@dimen/activity_small_pixel"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/roundedet"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:textColorHint="#000000"
+                    android:inputType="text"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titlePic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Settings_pic"
+                android:textColor="@color/textPrimary"
+                android:padding="@dimen/activity_small_pixel"
+                android:textSize="@dimen/font_default"
+                android:layout_below="@id/info3"/>
+
+            <ImageView
+                android:id="@+id/preview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/ic_photo_library_black_24dp"
+                android:layout_below="@id/titlePic"
+                android:padding="@dimen/activity_small_pixel"
+                android:contentDescription="@string/Description" />
+
+            <Button
+                android:id="@+id/picChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Settings_picChange"
+                android:drawableTop="@drawable/ic_add_a_photo_black_24dp"
+                android:drawablePadding="@dimen/activity_small_pixel"
+                android:layout_below="@id/preview"/>
+
+            <LinearLayout
+                android:id="@+id/PasswordHere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/picChange">
+
+                <TextView
+                    android:id="@+id/titlePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Settings_password"
+                    android:textColor="@color/textPrimary"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:textSize="@dimen/font_default"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedet"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:hint="@string/Settings_passwordOld"
+                    android:layout_marginBottom="@dimen/activity_small_pixel"
+                    android:textColorHint="#000000"
+                    android:inputType="textPassword"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedet"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:hint="@string/Settings_passwordHint"
+                    android:layout_marginBottom="@dimen/activity_small_pixel"
+                    android:textColorHint="#000000"
+                    android:inputType="textPassword"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedet"
+                    android:padding="@dimen/activity_small_pixel"
+                    android:hint="@string/Settings_passwordConfirmationHint"
+                    android:textColorHint="#000000"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PasswordHere">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbutton"
+                    android:text="@string/Settings_btn1"
+                    android:layout_margin="@dimen/activity_default_pixel"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbutton1"
+                    android:text="@string/Settings_btn2"
+                    android:layout_margin="@dimen/activity_default_pixel"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

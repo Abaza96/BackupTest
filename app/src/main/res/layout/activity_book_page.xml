@@ -7,375 +7,418 @@
     android:background="@color/colorPrimaryDark"
     tools:context="com.justgraduationproject.android.recommendations.BookPageActivity">
 
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/customToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_small_pixel"
+                    android:src="@drawable/logoredintense"
+                    android:contentDescription="@string/Description"/>
+
+                <ImageButton
+                    android:id="@+id/setts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_settings_black_24dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/Description"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="@dimen/activity_default_pixel"
+                    android:layout_marginEnd="@dimen/activity_default_pixel"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="SettingsNav"/>
+
+                <SearchView
+                    android:id="@+id/profile"
+                    android:layout_width="@dimen/activity_large_pixel"
+                    android:layout_height="@dimen/activity_large_pixel"
+                    android:layout_marginStart="@dimen/activity_default_pixel"
+                    android:layout_marginEnd="@dimen/activity_default_pixel"
+                    android:layout_toStartOf="@+id/setts"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customToolbar"
+        tools:ignore="UselessParent">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            android:layout_height="wrap_content">
 
-            <ScrollView
+            <LinearLayout
+                android:id="@+id/intro"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:ignore="UselessParent">
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/mrmercedes"
+                    android:contentDescription="@string/Description" />
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedet"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginBottom="32dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
 
-
-                    <LinearLayout
-                        android:id="@+id/intro"
+                    <Spinner
+                        android:layout_gravity="center"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        android:background="@android:color/white">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="250dp"
-                            android:layout_marginTop="16dp"
-                            android:src="@drawable/mrmercedes"
-                            android:contentDescription="@string/Description" />
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/roundedet"
-                            android:layout_marginTop="32dp"
-                            android:layout_marginRight="64dp"
-                            android:layout_marginLeft="64dp"
-                            android:layout_marginBottom="32dp"
-                            android:paddingTop="8dp"
-                            android:paddingBottom="8dp">
-
-                            <Spinner
-                                android:layout_gravity="center"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:entries="@array/spinnerItems"
-                                android:layout_marginLeft="16dp"
-                                android:layout_marginRight="16dp"
-                                android:textAlignment="center"/>
-
-                        </RelativeLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="16dp"
-                            android:text="@string/Book_userRating"
-                            android:textSize="16sp"
-                            android:textColor="@android:color/black"
-                            android:gravity="center"/>
-
-                        <RatingBar
-                            android:layout_width="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_height="wrap_content"
-                            android:numStars="5"
-                            android:rating="1"
-                            android:stepSize="0.5"
-                            android:layout_marginBottom="16dp"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/Attributes"
-                        android:layout_below="@id/intro"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:paddingBottom="16dp"
-                        android:orientation="vertical"
-                        android:background="@android:color/white">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="8dp">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Book_title"
-                                android:textSize="16sp"
-                                android:textColor="#000000"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Book"
-                                android:textSize="16sp"
-                                android:textColor="@color/colorPrimary"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="@dimen/activity_small_pixel">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Book_author"
-                                android:textSize="16sp"
-                                android:textColor="#000000"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Author_name"
-                                android:textSize="16sp"
-                                android:textColor="@color/colorPrimary"
-                                android:onClick="Navigate"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="@dimen/activity_small_pixel">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Book_genre"
-                                android:textSize="16sp"
-                                android:textColor="#000000"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Book_genreName"
-                                android:textSize="16sp"
-                                android:textColor="@color/colorPrimary"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="@dimen/activity_small_pixel">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Book_averageRating"
-                                android:textSize="16sp"
-                                android:textColor="#000000"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/AVG"
-                                android:textSize="16sp"
-                                android:textColor="@color/colorPrimary"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="8dp">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Socialization"
-                                android:textSize="16sp"
-                                android:textColor="#000000"/>
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/fb"
-                                android:textSize="16sp"
-                                android:textColor="@color/colorPrimary"
-                                android:contentDescription="@string/Description" />
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/twitter"
-                                android:textSize="16sp"
-                                android:textColor="@color/colorPrimary"
-                                android:contentDescription="@string/Description" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/Overview"
-                        android:layout_below="@id/Attributes"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        android:background="@android:color/white">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="8dp"
-                            android:text="@string/Book_summarySF"
-                            android:textSize="16sp"
-                            android:textColor="#000000"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Paragraph"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginBottom="8dp"
-                            android:textColor="#000000"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingStart="5dp"
-                            android:paddingTop="4dp"
-                            android:paddingBottom="6dp"
-                            android:layout_marginTop="16dp"
-                            android:text="@string/Book_reviews"
-                            android:textColor="#000000"
-                            tools:ignore="RtlSymmetry" />
-
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:layout_gravity="center"
-                            android:hint="@string/Book_reviewsHintMsG"
-                            android:textColorHint="@color/colorAccent"/>
-
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:text="@string/Book_revealReviews"
-                            android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
-                            android:background="@android:color/transparent"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/Recommendations"
-                        android:layout_below="@id/Overview"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        android:background="#FFFFFF"
-                        tools:context="com.justgraduationproject.android.recommenderapp.HorizontalLayout">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="8dp"
-                            android:text="@string/Recommendation1"
-                            android:textSize="16sp"
-                            android:textColor="#000000"/>
-
-                        <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-
-                            android:background="@color/colorAccent">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="250dp"
-                                    android:layout_margin="16dp"
-                                    android:src="@drawable/dd"
-                                    android:contentDescription="@string/Description" />
-
-                                <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="250dp"
-                                    android:layout_margin="16dp"
-                                    android:src="@drawable/itking"
-                                    android:contentDescription="@string/Description" />
-
-                                <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="250dp"
-                                    android:layout_margin="16dp"
-                                    android:src="@drawable/carrie"
-                                    android:contentDescription="@string/Description" />
-
-                            </LinearLayout>
-
-                        </HorizontalScrollView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="8dp"
-                            android:text="@string/Recommendation0"
-                            android:textSize="16sp"
-                            android:textColor="#000000"/>
-
-                        <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-
-                            android:background="@color/colorAccent">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="250dp"
-                                    android:layout_margin="16dp"
-                                    android:src="@drawable/legally"
-                                    android:contentDescription="@string/Description" />
-
-                                <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="250dp"
-                                    android:layout_margin="16dp"
-                                    android:src="@drawable/crowg"
-                                    android:contentDescription="@string/Description" />
-
-                                <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="250dp"
-                                    android:layout_margin="16dp"
-                                    android:src="@drawable/iseeyou"
-                                    android:contentDescription="@string/Description" />
-
-                            </LinearLayout>
-
-                        </HorizontalScrollView>
-
-                    </LinearLayout>
-
+                        android:entries="@array/spinnerItems"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textAlignment="center"/>
 
                 </RelativeLayout>
 
-            </ScrollView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/Book_userRating"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="1"
+                    android:stepSize="0.5"
+                    android:layout_marginBottom="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Attributes"
+                android:layout_below="@id/intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:paddingBottom="16dp"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Book_title"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Book"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_small_pixel">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Book_author"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Author_name"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:onClick="Navigate"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_small_pixel">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Book_genre"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Book_genreName"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_small_pixel">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Book_averageRating"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/AVG"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Socialization"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fb"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:contentDescription="@string/Description" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/twitter"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:contentDescription="@string/Description" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Overview"
+                android:layout_below="@id/Attributes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/Book_summarySF"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Paragraph"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Book_reviews"
+                    android:textColor="#000000"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center"
+                    android:hint="@string/Book_reviewsHintMsG"
+                    android:textColorHint="@color/colorAccent"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/Book_revealReviews"
+                    android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Recommendations"
+                android:layout_below="@id/Overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                tools:context="com.justgraduationproject.android.recommenderapp.HorizontalLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/Recommendation1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+
+                    android:background="@color/colorAccent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="250dp"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/dd"
+                            android:contentDescription="@string/Description" />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="250dp"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/itking"
+                            android:contentDescription="@string/Description" />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="250dp"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/carrie"
+                            android:contentDescription="@string/Description" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/Recommendation0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+
+                    android:background="@color/colorAccent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="250dp"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/legally"
+                            android:contentDescription="@string/Description" />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="250dp"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/crowg"
+                            android:contentDescription="@string/Description" />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="250dp"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/iseeyou"
+                            android:contentDescription="@string/Description" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
 
         </RelativeLayout>
 
-    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
 
 
-
-<!--Recyclables-->
+    <!--Recyclables-->
 
     <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->

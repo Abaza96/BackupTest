@@ -258,7 +258,7 @@
                     android:textSize="19sp"
                     android:background="@android:color/transparent"
                     tools:ignore="ButtonStyle"
-                    android:onClick="fetchProfile"/>
+                    android:onClick="Navigate"/>
 
                 <Button
                     android:id="@+id/Btn1"
@@ -270,7 +270,7 @@
                     android:textSize="19sp"
                     android:background="@android:color/transparent"
                     tools:ignore="ButtonStyle"
-                    android:onClick="fetchProfile"/>
+                    android:onClick="Navigate"/>
 
                 <Button
                     android:id="@+id/Btn2"
@@ -282,7 +282,7 @@
                     android:textSize="19sp"
                     android:background="@android:color/transparent"
                     tools:ignore="ButtonStyle"
-                    android:onClick="fetchProfile"/>
+                    android:onClick="Navigate"/>
 
             </LinearLayout>
 

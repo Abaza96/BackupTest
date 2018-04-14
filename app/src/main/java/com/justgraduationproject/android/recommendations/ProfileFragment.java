@@ -24,7 +24,7 @@ public class ProfileFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 
-    public void fetchProfile(View v)
+    public void Navigate(View v)
     {
         int X = v.getId();
         Fragment f;
